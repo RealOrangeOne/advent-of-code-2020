@@ -1,8 +1,6 @@
 from itertools import product
 from math import prod
 
-import sys
-import os
 from pathlib import Path
 
 with Path(__file__).parent.joinpath("data.txt").open() as f:
