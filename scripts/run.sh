@@ -11,6 +11,6 @@ for task_dir in [0-9]*; do
 
     if [ -d "$task_dir/rust" ]; then
         echo -e "\n> $task_dir/rust"
-        cd $task_dir/rust && time cargo run --release -q
+        cd $task_dir/rust && time cargo run --release -q && cd - > /dev/null
     fi
 done
