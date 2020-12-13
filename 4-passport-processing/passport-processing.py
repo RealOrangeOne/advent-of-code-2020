@@ -33,7 +33,6 @@ def validate(field: PassportField, value: str):
     elif field == PassportField.EXPIRATION_YEAR:
         return 2020 <= int(value) <= 2030
     elif field == PassportField.HEIGHT:
-        print(value)
         if value.endswith("cm"):
             return 150 <= int(value.rstrip("cm")) <= 193
         elif value.endswith("in"):
